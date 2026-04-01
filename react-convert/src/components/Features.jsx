@@ -23,7 +23,7 @@ const Features = () => {
                 {['Public Health', 'Public Finance', 'Local Governance', 'Water & Supply'].map((btn, idx) => (
                   <button 
                     key={idx} 
-                    className="bg-transparent border border-[#1F4E79] py-3 px-6 rounded-full text-[#1F4E79] w-full md:w-[340px] text-left hover:bg-[#3A7CA5] hover:text-white transition-colors duration-300 font-medium"
+                    className="bg-transparent border border-[#1F4E79] py-3 px-6 rounded-full text-[#1F4E79] w-full md:w-[340px] text-center hover:bg-[#3A7CA5] hover:text-white transition-colors duration-300 font-medium"
                   >
                     {btn}
                   </button>
