@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", sans-serif;
+  --color-primary-dark: #1F2A5A;
+  --color-primary-light: #A7D6D9;
+  --color-primary-cyan: #4FB6B8;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
