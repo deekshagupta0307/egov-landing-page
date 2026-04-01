@@ -15,12 +15,11 @@ const MainNavbar = () => {
   return (
     <nav className="bg-white py-4 relative z-40 shadow-sm">
       <div className="container mx-auto px-4 max-w-7xl flex flex-wrap items-center justify-between">
-        {/* LOGO */}
+      
         <a href="#" className="flex-shrink-0">
           <img src="/public/logo.png" width="120" alt="Logo" />
         </a>
 
-        {/* HAMBURGER */}
         <button 
           className="lg:hidden block p-2 focus:outline-none"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -28,7 +27,6 @@ const MainNavbar = () => {
           <div className="w-6 h-0.5 bg-[#1F2A5A] relative before:content-[''] before:absolute before:w-6 before:h-0.5 before:bg-[#1F2A5A] before:-top-2 before:left-0 after:content-[''] after:absolute after:w-6 after:h-0.5 after:bg-[#1F2A5A] after:top-2 after:left-0"></div>
         </button>
 
-        {/* NAV ITEMS */}
         <div className={`${menuOpen ? 'block' : 'hidden'} lg:flex w-full lg:w-auto lg:items-center mt-4 lg:mt-0`}>
           <ul className="flex flex-col lg:flex-row lg:gap-8 items-start lg:items-center w-full">
             {navLinks.map((link, index) => (
@@ -42,7 +40,6 @@ const MainNavbar = () => {
               </li>
             ))}
 
-            {/* SEARCH */}
             <li className="py-2 lg:py-0 lg:ml-4">
               <span className="text-lg cursor-pointer hover:opacity-80">🔍</span>
             </li>

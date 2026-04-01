@@ -5,7 +5,6 @@ const CTA = () => {
     <section className="bg-[#1F2A5A] py-[65px] relative text-white">
       <div className="container mx-auto px-4 max-w-7xl flex flex-col md:flex-row items-center justify-between gap-8 md:gap-[30px] flex-wrap">
         
-        {/* LEFT SIDE */}
         <div className="w-full md:max-w-[50%] text-left">
           <img src="/public/digi.png" alt="Digi Logo" className="w-[160px] mb-5" />
           <h4 className="text-xl md:text-[1.4rem] font-light mb-2">Our Open source</h4>
@@ -20,7 +19,7 @@ const CTA = () => {
           </button>
         </div>
 
-        {/* RIGHT SIDE */}
+    
         <div className="w-full md:max-w-[45%] text-left md:text-right mt-8 md:mt-0 flex justify-center md:justify-end">
           <img 
             src="/public/girl.jpg" 

@@ -7,7 +7,6 @@ const Footer = () => {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="flex flex-col md:flex-row items-start justify-between gap-10">
             
-            {/* LEFT SECTION */}
             <div className="w-full md:w-1/3">
               <img src="/public/logo.png" className="w-[120px] mb-5" alt="eGov Logo" />
 
@@ -15,7 +14,6 @@ const Footer = () => {
                 Catalysing digital transformation in public service delivery at speed & scale.
               </p>
 
-              {/* SOCIAL ICONS */}
               <div className="flex gap-[15px] mt-5">
                 {['f', 'x', 'in', '▶'].map((icon, idx) => (
                   <div 
@@ -28,7 +26,6 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* MIDDLE LINKS */}
             <div className="w-full md:w-1/3">
               <h5 className="font-bold mb-5 text-lg">Useful Links</h5>
 
@@ -47,7 +44,6 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* RIGHT SUBSCRIBE */}
             <div className="w-full md:w-1/3">
               <h5 className="font-bold mb-4 text-lg">Subscribe Now</h5>
 
@@ -71,16 +67,13 @@ const Footer = () => {
         </div>
       </footer>
 
-      {/* SUB FOOTER */}
       <div className="bg-[#2F80ED] text-white py-[15px] text-sm">
         <div className="container mx-auto px-4 max-w-7xl flex justify-between items-center flex-wrap gap-4">
-          
-          {/* LEFT */}
+
           <p className="m-0">
             ©2024. eGov. All Rights Reserved.
           </p>
 
-          {/* RIGHT */}
           <div className="flex gap-[30px]">
             <span className="cursor-pointer hover:underline transition-all">Privacy Policy</span>
             <span className="cursor-pointer hover:underline transition-all">Terms and Conditions</span>

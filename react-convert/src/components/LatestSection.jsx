@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-// Mock Data
 const MOCK_PRODUCTS = [
   {
     id: 1,
@@ -54,18 +53,16 @@ const LatestSection = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
 
-  // Simulate API Fetch
   useEffect(() => {
     setLoading(true);
     const timer = setTimeout(() => {
       setProducts(MOCK_PRODUCTS);
       setLoading(false);
-    }, 1500); // 1.5 second simulated delay
+    }, 1500);
 
     return () => clearTimeout(timer);
   }, []);
 
-  // Filter Logic
   const filteredProducts = products.filter(product => {
     const matchesSearch = product.name.toLowerCase().includes(searchQuery.toLowerCase());
     const matchesCategory = selectedCategory === 'All' || product.category === selectedCategory;
@@ -75,17 +72,14 @@ const LatestSection = () => {
   return (
     <section className="py-[70px] bg-[#f8f9fa]">
       <div className="container mx-auto px-4 max-w-7xl">
-        
-        {/* Heading */}
+
         <h3 className="text-2xl md:text-3xl mb-6 text-left">
           <span className="font-light text-[#1F2A5A] mr-2">Latest at</span>
           <span className="font-bold text-[#1F2A5A]">eGov Products</span>
         </h3>
 
-        {/* Search and Filter Section */}
         <div className="flex flex-col md:flex-row gap-4 mb-8 items-start md:items-center justify-between">
           
-          {/* Category Filter Buttons */}
           <div className="flex flex-wrap gap-3">
             {CATEGORIES.map((cat, idx) => (
               <button 
@@ -102,7 +96,6 @@ const LatestSection = () => {
             ))}
           </div>
 
-          {/* Search Bar */}
           <div className="w-full md:w-72">
             <input 
               type="text" 
@@ -114,15 +107,12 @@ const LatestSection = () => {
           </div>
         </div>
         
-        {/* Main Content Area */}
         {loading ? (
-          // Loading State (Bonus)
           <div className="flex justify-center items-center h-64 flex-col">
             <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#4FB6B8] mb-4"></div>
             <p className="text-[#1F2A5A] font-medium text-lg animate-pulse">Fetching latest products...</p>
           </div>
         ) : filteredProducts.length === 0 ? (
-          // Empty State (Bonus)
           <div className="flex justify-center items-center h-64 flex-col bg-white rounded-[15px] shadow-sm border border-gray-100">
             <svg className="w-16 h-16 text-gray-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
             <h4 className="text-xl font-bold text-[#1F2A5A] mb-2">No results found</h4>
@@ -135,7 +125,6 @@ const LatestSection = () => {
             </button>
           </div>
         ) : (
-          // Products Grid
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredProducts.map((product) => (
               <div 

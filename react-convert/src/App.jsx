@@ -13,22 +13,15 @@ import Footer from './components/Footer'
 function App() {
   return (
     <>
-      {/* Navbar section at the top */}
       <TopNavbar />
       <MainNavbar />
-      
-      {/* Main landing page content */}
       <Hero />
       <Stats />
       <Features />
       <SustainSection />
       <CTA />
-      
-      {/* Additional informational sections */}
       <LatestSection />
       <Supporters />
-      
-      {/* Footer */}
       <Footer />
     </>
   )

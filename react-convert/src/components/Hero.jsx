@@ -6,7 +6,6 @@ const Hero = () => {
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-0">
           
-          {/* LEFT CONTENT */}
           <div className="md:w-1/2">
             <h4 className="text-xl md:text-[2rem] lg:text-[2.3rem] text-[#1F2A5A] font-normal leading-snug w-full lg:max-w-[90%] mb-4">
               20 years of digital transformation in public service delivery
@@ -30,7 +29,6 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* RIGHT IMAGE */}
           <div className="md:w-1/2 flex justify-center mt-10 md:mt-0">
             <img 
               src="/public/hero.jpg" 

@@ -7,7 +7,6 @@ const Features = () => {
         <div className="bg-white rounded-[20px] p-8 md:p-[50px] shadow-[0_20px_40px_rgba(0,0,0,0.1)]">
           <div className="flex flex-col md:flex-row items-center gap-10 md:gap-0">
             
-            {/* LEFT SIDE */}
             <div className="md:w-1/2 w-full">
               <h3 className="mb-6 leading-tight">
                 <span className="text-xl md:text-[1.4rem] font-medium text-[#1F4E79] block">
@@ -18,7 +17,6 @@ const Features = () => {
                 </span>
               </h3>
 
-              {/* BUTTONS */}
               <div className="flex flex-col gap-3">
                 {['Public Health', 'Public Finance', 'Local Governance', 'Water & Supply'].map((btn, idx) => (
                   <button 
@@ -31,11 +29,9 @@ const Features = () => {
               </div>
             </div>
 
-            {/* RIGHT SIDE CARDS */}
             <div className="md:w-1/2 w-full">
               <div className="flex flex-col md:flex-row gap-6">
                 
-                {/* CARD 1 */}
                 <div className="relative p-6 rounded-[18px] text-white w-full h-[250px] md:h-[300px] overflow-hidden bg-[#56B6C2] flex flex-col justify-between">
                   <div>
                     <h4 className="font-bold text-2xl md:text-3xl">210+</h4>
@@ -50,7 +46,6 @@ const Features = () => {
                   </div>
                 </div>
 
-                {/* CARD 2 */}
                 <div className="relative p-6 rounded-[18px] text-white w-full h-[250px] md:h-[300px] overflow-hidden bg-[#2F80ED] flex flex-col justify-between">
                   <div>
                     <h4 className="font-bold text-2xl md:text-3xl">2 Bn</h4>
